@@ -9,7 +9,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil)
+(defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil go-mode)
   "A list of packages that will be installed if missing when firing emacs")
 
 (dolist (p my-packages)
