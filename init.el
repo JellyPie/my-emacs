@@ -6,14 +6,14 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-(when (not package-archive-contents)
+(unless package-archive-contents
   (package-refresh-contents))
 
 (defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil)
   "A list of packages that will be installed if missing when firing emacs")
 
 (dolist (p my-packages)
-  (when (not (package-installed-p p))
+  (unless (package-installed-p p)
     (package-install p)))
 
 (defconst my-emacs-dir (file-name-directory load-file-name) "Top-level emacs dir")
