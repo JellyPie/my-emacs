@@ -1,7 +1,7 @@
 ;; evil-related settings
 ;; Setup evil
-;; Setup evil-leader
-;; Register evil-leader keybindings
+;; Setup evil-leader & register keybindings
+;; Setup evil-nerd-commenter
 
 (require 'evil)
 (evil-mode 1)
@@ -15,3 +15,5 @@
   "gi" 'go-goto-imports
   "ga" 'go-import-add
   "gr" 'go-remove-unused-imports)
+
+(evilnc-default-hotkeys)

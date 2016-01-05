@@ -11,7 +11,7 @@
 
 (defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil
                                       go-mode web-mode which-key
-                                      evil-leader)
+                                      evil-leader evil-nerd-commenter)
   "A list of packages that will be installed if missing when firing emacs")
 
 (dolist (p my-packages)
