@@ -3,7 +3,7 @@
 ;; Display column number in modeline
 ;; Hide chrome in GUI emacs
 
-(load-theme 'cyberpunk t)
+(load-theme 'ample-flat t)
 (column-number-mode 1)
 
 (when window-system
