@@ -9,8 +9,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme
-                                      evil go-mode web-mode)
+(defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil
+                                      go-mode web-mode which-key)
   "A list of packages that will be installed if missing when firing emacs")
 
 (dolist (p my-packages)
