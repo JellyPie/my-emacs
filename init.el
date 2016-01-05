@@ -10,7 +10,8 @@
   (package-refresh-contents))
 
 (defconst my-packages '(zenburn-theme ample-theme cyberpunk-theme evil
-                                      go-mode web-mode which-key)
+                                      go-mode web-mode which-key
+                                      evil-leader)
   "A list of packages that will be installed if missing when firing emacs")
 
 (dolist (p my-packages)
