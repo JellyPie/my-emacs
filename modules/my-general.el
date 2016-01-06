@@ -1,6 +1,7 @@
 ;; General emacs configuration file
 ;; Setup which-key autocomplete
 ;; Setup ido
+;; Setup smex
 ;; Manage backup files
 ;; Default to spaces instead of tabs
 ;; Clean file before save
@@ -11,6 +12,9 @@
 (setq ido-save-directory-list-file (expand-file-name "ido.last" my-save-dir))
 (setq ido-enable-flex-matching t)
 (ido-mode 1)
+
+(require 'smex)
+(smex-initialize)
 
 (setq backup-by-copying t)
 (setq backup-directory-alist `(("." . ,my-save-dir)))
