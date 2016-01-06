@@ -10,10 +10,31 @@
 (global-evil-leader-mode)
 
 (evil-leader/set-leader "<SPC>")
+(evil-leader/set-key
+  ":" 'smex
+  "m:" 'smex-major-mode-commands
+
+  "ff" 'ido-find-file
+
+  "bb" 'ido-switch-buffer
+  "bc" 'kill-this-buffer
+  "bl" 'list-buffers
+
+  "ws" 'evil-window-split
+  "wv" 'evil-window-vsplit
+  "wc" 'evil-window-delete
+  "wo" 'delete-other-windows
+  "w=" 'balance-windows
+  "ww" 'evil-window-next
+  "wh" 'evil-window-left
+  "wj" 'evil-window-down
+  "wk" 'evil-window-up
+  "wl" 'evil-window-right)
+
 (evil-leader/set-key-for-mode 'go-mode
-  "gf" 'gofmt
-  "gi" 'go-goto-imports
-  "ga" 'go-import-add
-  "gr" 'go-remove-unused-imports)
+  "mf" 'gofmt
+  "mi" 'go-goto-imports
+  "ma" 'go-import-add
+  "mr" 'go-remove-unused-imports)
 
 (evilnc-default-hotkeys)
