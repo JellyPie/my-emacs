@@ -1,11 +1,16 @@
 ;; General emacs configuration file
 ;; Setup which-key autocomplete
+;; Setup ido
 ;; Manage backup files
 ;; Default to spaces instead of tabs
 ;; Clean file before save
 
 (require 'which-key)
 (which-key-mode)
+
+(setq ido-save-directory-list-file (expand-file-name "ido.last" my-save-dir))
+(setq ido-enable-flex-matching t)
+(ido-mode 1)
 
 (setq backup-by-copying t)
 (setq backup-directory-alist `(("." . ,my-save-dir)))
