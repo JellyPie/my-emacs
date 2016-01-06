@@ -13,8 +13,7 @@
 (setq ido-enable-flex-matching t)
 (ido-mode 1)
 
-(require 'smex)
-(smex-initialize)
+(setq smex-save-file (expand-file-name "smex-items" my-save-dir))
 
 (setq backup-by-copying t)
 (setq backup-directory-alist `(("." . ,my-save-dir)))
