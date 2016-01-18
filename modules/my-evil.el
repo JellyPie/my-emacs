@@ -14,7 +14,14 @@
   ":" 'smex
   "m:" 'smex-major-mode-commands
 
+  "eq" 'save-buffers-kill-terminal
+
+  "hf" 'describe-function
+  "hk" 'describe-key
+  "hv" 'describe-variable
+
   "ff" 'ido-find-file
+  "fw" 'save-buffer
 
   "bb" 'ido-switch-buffer
   "bc" 'kill-this-buffer
